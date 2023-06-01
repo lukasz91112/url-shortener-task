@@ -1,0 +1,12 @@
+﻿@model AddUrlViewModel
+@{    
+}
+<h1>Add shortened URL</h1>
+<form method="post" action="Add" class="mt-5">
+    <div class="mb-3">
+        <label for="originalUrl" class="form-label">Original URL</label>
+        <input asp-for="OriginalUrl" type="text" class="form-control" id="OriginalUrl" asp-for="OriginalUrl">
+        <span asp-validation-for="OriginalUrl" class="text-danger"></span>
+    </div>
+    <button asp- type="submit" class="btn btn-primary">Create short URL</button>
+</form>
